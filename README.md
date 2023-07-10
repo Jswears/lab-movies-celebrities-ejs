@@ -80,11 +80,11 @@ In order to have everything organized, we will first create a couple of folders 
 
 ```js
 // starter code in both routes/celebrities.routes.js and routes/movies.routes.js
-const router = require('express').Router()
+const router = require("express").Router();
 
 // all your routes here
 
-module.exports = router
+module.exports = router;
 ```
 
 - **Views**: To keep things nice and clean, we will also create separate folders for `celebrities` and `movies`: `views/celebrities` and `views/movies`. Also, we will create a couple of files in each folder:
@@ -268,7 +268,7 @@ Here's the route we will be using:
      - Don't forget you have `cast` as the array of celebrity `id`s, and we need to `populate()` in order to get the full data about the celebrities 🎯
    - If everything is fine (_.then()_), render the `movies/movie-details` view and pass the variable with the movie's details into the view
    - If there's an error, catch it.
-4. In the `views/movies/movie-details.ejs` view file:
+4. In the `views/movies/movie-details.ejs` viewcle file:
    - Add an `<h2>` for the page's heading.
    - Display tags with the movie's `title`, `genre` and `plot`.
    - Use a `forEach` loop to display the cast's `name`, `occupation` and `catchPhrase`
