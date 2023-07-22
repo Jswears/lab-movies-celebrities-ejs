@@ -1,8 +1,11 @@
 <h2>Celebrities</h2>
 
-<div class="celebrity">
-  <% allCelebrities.forEach(celebrity => { %>
-  <p><%= celebrity.name %></p>
-  <% }) %>
+<% allCelebrities.forEach(celebrity => { %>
+<div class="celebrityCard">
+  <h3>Celebrity: <%= celebrity.name %></h3>
+  <h3>Occupation: <%= celebrity.occupation %></h3>
+  <h3>Catch phrase: <%=celebrity.catchPhrase%></h3>
+  <a href="/celebrities/<%= celebrity._id %>">See Details!</a>
 </div>
 
+<% }) %>

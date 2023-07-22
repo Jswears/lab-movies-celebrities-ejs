@@ -2,6 +2,9 @@
 
 <div class="movies">
   <% allMovies.forEach(movie => { %>
-  <p><%= movie.title %></p>
+  <div>
+    <a href="/movies/<%= movie._id %>">Title: <%= movie.title %></a>
+  </div>
+
   <% }) %>
 </div>

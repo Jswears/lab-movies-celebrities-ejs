@@ -9,7 +9,7 @@
     >Cast:
     <select name="cast" multiple>
       <% allCelebrities.forEach(celebrity => { %>
-      <option value="<%= celebrity %>"><%= celebrity.name %></option>
+      <option value="<%- celebrity.id %>"><%- celebrity.name %></option>
       <% }); %>
     </select>
   </label>

@@ -1,1 +1,10 @@
-<h1>hi</h1>
+<h1>Details</h1>
+<p>Name: <%= celebrity.name %></p>
+<p>Occupation: <%= celebrity.occupation%></p>
+<p>Catch phrase: <%= celebrity.catchPhrase %></p>
+<form action="/celebrities/<%= celebrity._id %>/delete" method="post">
+  <button type="submit">Delete Celebrity</button>
+</form>
+<form action="/celebrities/<%= celebrity._id %>/edit" method="get">
+  <button>Edit</button>
+</form>

@@ -15,3 +15,7 @@
   </label>
   <button type="submit">Add famous</button>
 </form>
+
+<% if (typeof errorMessage !== 'undefined') { %>
+<p><%= errorMessage %></p>
+<% } %>

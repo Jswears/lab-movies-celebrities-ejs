@@ -1,0 +1,23 @@
+<h2>Edit Movie</h2>
+<form action="/movies/<%= movieToEdit._id %>/edit" method="post">
+  <label
+    >Title:
+    <input type="text" id="title" name="title" value="<%= movieToEdit.title %>"
+  /></label>
+  <label
+    >Genre:
+    <input type="text" id="genre" name="genre" value="<%= movieToEdit.genre %>"
+  /></label>
+  <label>Plot: 
+    <input type="text" id="plot" name="plot" value="<%= movieToEdit.plot %>" />
+  </label>
+  <label>
+    Cast:
+    <select name="cast" id="cast" multiple>
+      <% celebrityToEdit.forEach(celebrity => { %>
+      <option value="<%= celebrity._id %>"><%= celebrity.name %></option>
+      <% }) %>
+    </select>
+  </label>
+  <button type="submit">Edit</button>
+</form>
